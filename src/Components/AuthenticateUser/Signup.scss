@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.signup {
+  font-family: 'Poppins', sans-serif;
+  header {
+    background-color: #ebe9e9;
+    ul {
+      height: 70px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      :first-child {
+        color: #06a497;
+        font-weight: 700;
+      }
+
+      .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #06a497;
+        font-weight: 700;
+        :first-child {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
