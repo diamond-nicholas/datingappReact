@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import PeopleIcon from '@material-ui/icons/People';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   return (
@@ -62,21 +63,50 @@ const Home = () => {
               guarantee the following:
             </p>
           </div>
-
           <div className='wrapper'>
             <div className='container'>
               <div className='cards'>
-                <PeopleIcon />
+                <img
+                  src='https://emilydates.com/webassets/img/png/icons/index-audience.png'
+                  alt=''
+                />
                 <h3>An expanding audience</h3>
                 <p>
                   Everyday thousands of new women and men add their profiles,
                   hoping to find a genuine partner.
                 </p>
               </div>
+              <div className='cards'>
+                <img
+                  src='	https://emilydates.com/webassets/img/png/icons/index-heart.png'
+                  alt=''
+                />
+                <h3>Convenience</h3>
+                <p>
+                  Our portal is extremely easy to use. New users will
+                  effortlessly master its features.
+                </p>
+              </div>
+              <div className='cards'>
+                <img
+                  src='	https://emilydates.com/webassets/img/png/icons/index-smile.png'
+                  alt=''
+                />
+                <h3>Support</h3>
+                <p>
+                  If you ever have any questions or difficulties, we are there
+                  to help you at your convenience.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div className='border'>
+            <button type='submit'>JOIN FREE</button>
           </div>
         </article>
       </section>
+      <Footer />
     </div>
   );
 };

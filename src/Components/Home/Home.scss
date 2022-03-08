@@ -95,7 +95,6 @@
 
     .advantages {
       background-color: #f0f0f0;
-
       .header {
         padding-top: 5rem;
         display: flex;
@@ -115,21 +114,43 @@
           text-align: center;
         }
       }
-
       .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 5rem;
 
         .container {
           display: flex;
-          justify-content: space-around;
+          justify-content: center;
           align-items: center;
 
           .cards {
             background-color: #fff;
             margin: 5px;
+            padding: 2rem;
+
+            p {
+              max-width: 300px;
+              font-size: 1rem;
+              line-height: 1.5;
+              margin-bottom: 0;
+              margin-top: 7px;
+            }
           }
+        }
+      }
+
+      .border {
+        button {
+          display: block;
+          margin: 0 auto;
+          background-color: #06a497;
+          padding: 1rem 3rem;
+          outline: none;
+          border: 1px solid #06a497;
+          color: #fff;
+          border-radius: 5px;
         }
       }
     }

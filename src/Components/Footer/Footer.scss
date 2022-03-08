@@ -1,0 +1,24 @@
+.footer {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .gridWrapper {
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;
+
+    div {
+      margin: 2rem;
+
+      ul {
+        list-style: none;
+
+        .title {
+          font-weight: 800;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
