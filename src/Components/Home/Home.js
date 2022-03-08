@@ -1,9 +1,9 @@
 import React from 'react';
-import './Signup.scss';
+import './Home.scss';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import PeopleIcon from '@material-ui/icons/People';
 
-const Signup = () => {
+const Home = () => {
   return (
     <div className='signup'>
       <header>
@@ -19,7 +19,8 @@ const Signup = () => {
         <article className='banner'>
           <div className='leftContainer'>
             <h1>
-              Dating for successful men <br /> and ambitious women
+              MyDatingAPP is a safe <br /> and comfortable place to find your
+              love
             </h1>
             <p>Find a relationship on your own terms</p>
           </div>
@@ -50,41 +51,29 @@ const Signup = () => {
             </form>
           </div>
         </article>
-      </section>
-      <section className='footer'>
-        <article className='gridWrapper'>
-          <div className='one'>
-            <ul>
-              <li className='title'>DOCUMENTS</li>
-              <li>Privacy Policy</li>
-              <li>Terms of Use</li>
-              <li>Website Rules</li>
-            </ul>
-          </div>
-          <div className='two'>
-            <ul>
-              <li className='title'>INFO</li>
-              <li>Payment Rules</li>
-              <li>security</li>
-              <li>Blog</li>
-            </ul>
+
+        <article className='advantages'>
+          <div className='header'>
+            <h3>Advantages of MyDatingAPP</h3>
+            <p>
+              MyDatingAPP is a communication platform, which offers a
+              comfortable and safe environment for men and women to find the
+              love of their life. Guided by the interests of our users, we
+              guarantee the following:
+            </p>
           </div>
 
-          <div className='three'>
-            <ul>
-              <li className='title'>SUPPORT</li>
-              <li>About us</li>
-              <li>Affiliate</li>
-              <li>Help</li>
-            </ul>
-          </div>
-          <div className='four'>
-            <ul>
-              <li className='title'>PAYMENT OPTIONS</li>
-              <li>
-                <img src='payment_opts.png' alt='' width='50' />
-              </li>
-            </ul>
+          <div className='wrapper'>
+            <div className='container'>
+              <div className='cards'>
+                <PeopleIcon />
+                <h3>An expanding audience</h3>
+                <p>
+                  Everyday thousands of new women and men add their profiles,
+                  hoping to find a genuine partner.
+                </p>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -92,4 +81,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Home;
