@@ -30,7 +30,7 @@
 
   .mainContent {
     margin-top: 5rem;
-    article {
+    .banner {
       height: 70vh;
       display: flex;
       justify-content: space-around;
@@ -88,6 +88,47 @@
               border: 1px solid transparent;
               color: #fff;
             }
+          }
+        }
+      }
+    }
+
+    .advantages {
+      background-color: #f0f0f0;
+
+      .header {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          font-weight: bolder;
+          color: #383838;
+        }
+        p {
+          width: 50%;
+          font-size: 1rem;
+          margin: auto;
+          text-align: center;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .cards {
+            background-color: #fff;
+            margin: 5px;
           }
         }
       }

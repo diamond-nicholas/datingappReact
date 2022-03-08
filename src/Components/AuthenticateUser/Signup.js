@@ -1,6 +1,7 @@
 import React from 'react';
 import './Signup.scss';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+import PeopleIcon from '@material-ui/icons/People';
 
 const Signup = () => {
   return (
@@ -15,7 +16,7 @@ const Signup = () => {
         </ul>
       </header>
       <section className='mainContent'>
-        <article>
+        <article className='banner'>
           <div className='leftContainer'>
             <h1>
               MyDatingAPP is a safe <br /> and comfortable place to find your
@@ -48,6 +49,31 @@ const Signup = () => {
                 <button type='submit'>Join</button>
               </div>
             </form>
+          </div>
+        </article>
+
+        <article className='advantages'>
+          <div className='header'>
+            <h3>Advantages of MyDatingAPP</h3>
+            <p>
+              MyDatingAPP is a communication platform, which offers a
+              comfortable and safe environment for men and women to find the
+              love of their life. Guided by the interests of our users, we
+              guarantee the following:
+            </p>
+          </div>
+
+          <div className='wrapper'>
+            <div className='container'>
+              <div className='cards'>
+                <PeopleIcon />
+                <h3>An expanding audience</h3>
+                <p>
+                  Everyday thousands of new women and men add their profiles,
+                  hoping to find a genuine partner.
+                </p>
+              </div>
+            </div>
           </div>
         </article>
       </section>
