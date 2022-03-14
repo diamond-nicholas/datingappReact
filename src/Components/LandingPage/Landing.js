@@ -1,13 +1,19 @@
-import React from 'react'
-import './Landing.scss'
-import Navbar from './Navbar'
+import React from 'react';
+import Cards from './Cards';
+import Filter from './Filter';
+import './Landing.scss';
+import Navbar from './Navbar';
 
 const Landing = () => {
   return (
     <div>
-    <Navbar/>
+      <Navbar />
+      <hr />
+      <Filter />
+      <hr />
+      <Cards />
     </div>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

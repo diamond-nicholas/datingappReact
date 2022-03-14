@@ -1,0 +1,39 @@
+.container {
+  .row {
+    .col {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        .wrapper {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border: 1.5px solid #06a497;
+          width: 20vw;
+          padding: 0.1rem 0.5rem;
+          background-color: #f0f0f0;
+          color: #06a497;
+          border-radius: 15px;
+          .vline {
+            border-left: 1.5px solid #06a497;
+            height: 10px;
+          }
+
+          .all,
+          .new,
+          .online {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .right {
+        .filter {
+          color: #06a497;
+        }
+      }
+    }
+  }
+}

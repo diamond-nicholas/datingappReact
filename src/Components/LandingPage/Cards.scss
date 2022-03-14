@@ -1,0 +1,42 @@
+.cardUser {
+  width: 18rem;
+  height: auto;
+  padding: 0;
+  img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .userData {
+    margin-top: 1rem;
+    .name {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #06a497;
+      font-weight: 600;
+
+      :first-child {
+        margin-right: 5px;
+        text-transform: capitalize;
+      }
+    }
+
+    .location {
+      margin-top: -14px;
+      font-weight: 400;
+    }
+  }
+}
+
+.widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

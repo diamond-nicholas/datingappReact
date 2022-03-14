@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './Components/AuthenticateUser/Signup';
 import Login from './Components/AuthenticateUser/Login';
 import Home from './Components/Home/Home';
-import Landing from './Components/LandingPage/Landing'
+import Landing from './Components/LandingPage/Landing';
+import DatingCards from './Components/DatingCards/DatingCards';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/encounter' element={<DatingCards />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Main />} />
-        <Route path='/search' element={<Landing/>}/>
+        <Route path='/search' element={<Landing />} />
       </Routes>
     </Router>
   );

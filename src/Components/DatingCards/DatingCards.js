@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TinderCard from 'react-tinder-card';
+import Navbar from '../LandingPage/Navbar';
 import './DatingCards.scss';
 
 function DatingCards() {
@@ -23,26 +24,29 @@ function DatingCards() {
     console.log(name + 'left the screen');
   };
   return (
-    <div className='datingCards'>
-      <div className='tinderCards__cardContainer'>
-        {people.map((person) => (
-          <TinderCard
-            className='swipe'
-            key={person.name}
-            preventSwipe={['up', 'down']}
-            onSwipe={(dir) => swiped(dir, person.name)}
-            onCardLeftScreen={() => outOfFrame(person.name)}
-          >
-            <div
-              style={{ backgroundImage: 'url(' + person.url + ')' }}
-              className='card'
+    <>
+      <Navbar />
+      <div className='datingCards'>
+        <div className='tinderCards__cardContainer'>
+          {people.map((person) => (
+            <TinderCard
+              className='swipe'
+              key={person.name}
+              preventSwipe={['up', 'down']}
+              onSwipe={(dir) => swiped(dir, person.name)}
+              onCardLeftScreen={() => outOfFrame(person.name)}
             >
-              <h3>{person.name}</h3>
-            </div>
-          </TinderCard>
-        ))}
+              <div
+                style={{ backgroundImage: 'url(' + person.url + ')' }}
+                className='card'
+              >
+                <h3>{person.name}</h3>
+              </div>
+            </TinderCard>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
