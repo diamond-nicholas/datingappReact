@@ -5,6 +5,7 @@ import ForumIcon from '@material-ui/icons/Forum';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import CloseIcon from '@material-ui/icons/Close';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Messages = () => {
   return (
@@ -39,6 +40,17 @@ const Messages = () => {
           </ul>
           <CloseIcon className='close' />
         </header>
+        <main className='main'>
+          <section className='allChats'>
+            <div className='searchUser'>
+              <form>
+                <input type='text' placeholder='Enter name' />
+                <SearchIcon className='search' />
+              </form>
+            </div>
+          </section>
+          <section className='liveChats'></section>
+        </main>
       </div>
     </>
   );
