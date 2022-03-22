@@ -10,6 +10,11 @@
       justify-content: space-around;
       align-items: center;
       list-style: none;
+
+      .link {
+        text-decoration: none;
+      }
+
       :first-child {
         color: #06a497;
         font-weight: 700;
@@ -21,6 +26,7 @@
         align-items: center;
         color: #06a497;
         font-weight: 700;
+        text-decoration: none;
         :first-child {
           margin-right: 0.5rem;
         }

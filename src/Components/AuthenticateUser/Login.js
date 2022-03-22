@@ -25,7 +25,7 @@ const Login = () => {
 
   useEffect(() => {
     if (localStorage.getItem('date-app-user')) {
-      navigate('/login');
+      navigate('/search');
     }
   }, []);
 
@@ -90,7 +90,9 @@ const Login = () => {
             />
           </div>
           <div className='forgetPassword'>
-            <p>Join free</p>
+            <Link to='/signup' className='link'>
+              <p>Join free</p>
+            </Link>
             <p>Forget Password?</p>
           </div>
           <div className='login'>

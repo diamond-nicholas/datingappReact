@@ -38,6 +38,12 @@
         align-items: center;
         font-size: 0.7rem;
         font-weight: 800;
+        .link {
+          text-decoration: none;
+          color: #767676;
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
       }
 
       .login {
@@ -51,6 +57,10 @@
           outline: none;
           border: 1px solid #06a497;
           border-radius: 5px;
+        }
+        button:focus {
+          color: #767676;
+          font-size: 1.2rem;
         }
       }
     }
