@@ -71,7 +71,42 @@
           }
         }
       }
-      // background-color: red;
+
+      .userChats {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .img {
+          img {
+            width: 50%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+
+        .user {
+          margin-left: -7rem;
+          margin-top: 1rem;
+          margin-right: 0.5rem;
+          p {
+            color: #1baca0;
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+
+        .addToFavourites {
+          justify-self: flex-end;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    .hr {
+      border: 0.5px solid #e9e9e9;
+      height: 100vh;
     }
     .liveChats {
       width: 75vw;

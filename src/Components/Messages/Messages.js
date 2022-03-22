@@ -48,8 +48,22 @@ const Messages = () => {
                 <SearchIcon className='search' />
               </form>
             </div>
+            <div className='userChats'>
+              <div className='img'>
+                <img src='img.jpg' alt='' />
+              </div>
+              <div className='user'>
+                <p>Name, 25</p>
+              </div>
+              <div className='addToFavourites'>
+                <StarOutlineIcon />
+              </div>
+            </div>
           </section>
-          <section className='liveChats'></section>
+          <div className='hr'></div>
+          <section className='liveChats'>
+            <div className='liveUser'></div>
+          </section>
         </main>
       </div>
     </>
