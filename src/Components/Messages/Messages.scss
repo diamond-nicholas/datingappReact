@@ -1,0 +1,44 @@
+.messages {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06a497;
+    // height: 100%;
+
+    ul {
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li {
+        margin-right: 4rem;
+
+        .conversation,
+        .unread,
+        .favourite,
+        .ignored {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #c3e9e6;
+          font-weight: 500;
+          font-size: 1.1rem;
+
+          p {
+            margin-top: 1rem;
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+
+    .close {
+      margin-right: 3rem;
+      color: #c3e9e6;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+}

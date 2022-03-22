@@ -5,6 +5,7 @@ import Login from './Components/AuthenticateUser/Login';
 import Home from './Components/Home/Home';
 import Landing from './Components/LandingPage/Landing';
 import DatingCards from './Components/DatingCards/DatingCards';
+import Messages from './Components/Messages/Messages';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Main />} />
         <Route path='/search' element={<Landing />} />
+        <Route path='/messages' element={<Messages />} />
       </Routes>
     </Router>
   );
