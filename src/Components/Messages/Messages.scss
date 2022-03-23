@@ -73,11 +73,50 @@
 
     .hr {
       border: 0.5px solid #e9e9e9;
-      height: 100vh;
+      height: calc(100vh - 70px);
     }
     .liveChats {
       width: 75vw;
-      height: 100vh;
+      height: calc(100vh - 100px);
+      // overflow-y: hidden;
+
+      .liveUser {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 100px);
+
+        .chatBoxTop {
+          height: 100%;
+          overflow-y: scroll;
+          padding-right: 10px;
+        }
+        .chatBoxTop::-webkit-scrollbar {
+          -webkit-appearance: none;
+        }
+
+        .chatBoxBottom {
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .chatMessageInput {
+            width: 80%;
+            height: 90px;
+            padding: 10px;
+          }
+          .chatSubmitBtn {
+            width: 70px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: teal;
+            color: #fff;
+          }
+        }
+      }
       // background-color: #06a497;
     }
   }

@@ -61,8 +61,18 @@ const Messages = () => {
                 <Chat />
                 <Chat own={true} />
                 <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
               </div>
-              <div className='chatBoxBottom'></div>
+              <div className='chatBoxBottom'>
+                <textarea
+                  className='chatMessageInput'
+                  placeholder='Type a message'
+                ></textarea>
+                <button className='chatSubmitBtn'>Send</button>
+              </div>
             </div>
           </section>
         </main>
