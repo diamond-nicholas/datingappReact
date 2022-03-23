@@ -8,6 +8,7 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import CloseIcon from '@material-ui/icons/Close';
 import SearchIcon from '@material-ui/icons/Search';
 import Conversation from './Conversation';
+import Chat from './Chats/Chat';
 
 const Messages = () => {
   return (
@@ -55,7 +56,14 @@ const Messages = () => {
           </section>
           <div className='hr'></div>
           <section className='liveChats'>
-            <div className='liveUser'></div>
+            <div className='liveUser'>
+              <div className='chatBoxTop'>
+                <Chat />
+                <Chat own={true} />
+                <Chat />
+              </div>
+              <div className='chatBoxBottom'></div>
+            </div>
           </section>
         </main>
       </div>
