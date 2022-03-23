@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
 import './Messages.scss';
 import { Link } from 'react-router-dom';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -9,8 +10,26 @@ import CloseIcon from '@material-ui/icons/Close';
 import SearchIcon from '@material-ui/icons/Search';
 import Conversation from './Conversation';
 import Chat from './Chats/Chat';
+import axios from 'axios';
+import { getConversationRoute } from '../Utilis/APIroutes';
 
 const Messages = () => {
+  const [conversations, setConversations] = useState([]);
+  const user = JSON.parse(localStorage.getItem('date-app-user'));
+
+  useEffect(() => {
+    const getConversations = async () => {
+      try {
+        const res = await axios.get(
+          'http://localhost:8001/api/v1/conversation/' + user._id
+        );
+        setConversations(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getConversations();
+  }, [user._id]);
   return (
     <>
       <div className='messages'>
@@ -51,8 +70,10 @@ const Messages = () => {
               <input type='text' placeholder='Enter name' />
               <SearchIcon className='search' />
             </div>
-            <Conversation />
-            <Conversation />
+
+            {conversations.map((converse) => (
+              <Conversation conversatio={converse} />
+            ))}
           </section>
           <div className='hr'></div>
           <section className='liveChats'>
