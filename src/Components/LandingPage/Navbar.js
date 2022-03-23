@@ -32,9 +32,11 @@ const Navbar = () => {
             </li>
 
             <li class='nav-item'>
-              <p class='nav-link' href='#'>
-                Messages
-              </p>
+              <NavLink to='/messages'>
+                <p class='nav-link' href='#'>
+                  Messages
+                </p>
+              </NavLink>
             </li>
 
             <li class='nav-item'>

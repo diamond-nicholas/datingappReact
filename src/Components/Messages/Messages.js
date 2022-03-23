@@ -1,11 +1,13 @@
 import React from 'react';
 import './Messages.scss';
+import { Link } from 'react-router-dom';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import ForumIcon from '@material-ui/icons/Forum';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import CloseIcon from '@material-ui/icons/Close';
 import SearchIcon from '@material-ui/icons/Search';
+import Conversation from './Conversation';
 
 const Messages = () => {
   return (
@@ -38,27 +40,18 @@ const Messages = () => {
               </div>
             </li>
           </ul>
-          <CloseIcon className='close' />
+          <Link to='/search'>
+            <CloseIcon className='close' />
+          </Link>
         </header>
         <main className='main'>
           <section className='allChats'>
             <div className='searchUser'>
-              <form>
-                <input type='text' placeholder='Enter name' />
-                <SearchIcon className='search' />
-              </form>
+              <input type='text' placeholder='Enter name' />
+              <SearchIcon className='search' />
             </div>
-            <div className='userChats'>
-              <div className='img'>
-                <img src='img.jpg' alt='' />
-              </div>
-              <div className='user'>
-                <p>Name, 25</p>
-              </div>
-              <div className='addToFavourites'>
-                <StarOutlineIcon />
-              </div>
-            </div>
+            <Conversation />
+            <Conversation />
           </section>
           <div className='hr'></div>
           <section className='liveChats'>
