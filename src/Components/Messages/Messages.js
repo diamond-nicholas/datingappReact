@@ -72,7 +72,7 @@ const Messages = () => {
             </div>
 
             {conversations.map((converse) => (
-              <Conversation conversatio={converse} />
+              <Conversation conversation={converse} currentUser={user} />
             ))}
           </section>
           <div className='hr'></div>
@@ -82,9 +82,9 @@ const Messages = () => {
                 <Chat />
                 <Chat own={true} />
                 <Chat />
+                <Chat own={true} />
                 <Chat />
-                <Chat />
-                <Chat />
+                <Chat own={true} />
                 <Chat />
               </div>
               <div className='chatBoxBottom'>

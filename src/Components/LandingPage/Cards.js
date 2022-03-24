@@ -58,7 +58,11 @@ const Cards = () => {
               <>
                 <div className='col-xs-12 col-sm-6 col-md-4 my-4' key={_id}>
                   <div className='card cardUser'>
-                    <img src={image} className='card-img-top' alt='' />
+                    <img
+                      src={image ? image : 'humanPlaceholder.jpg'}
+                      className='card-img-top'
+                      alt=''
+                    />
                     <div className='card-body'>
                       <div className='widget'>
                         <div className='emontions'>
